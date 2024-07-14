@@ -1,5 +1,5 @@
 <!-- Modal -->
-<form id="frmAgregarEvento" onsubmit="return agregarEvento()">
+<form id="frmAgregarEvento" onsubmit=" agregarEvento()">
   <div class="modal fade" id="modal_agregar_evento" tabindex="-1" aria-labelledby="modal_agregar_eventoLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -25,3 +25,4 @@
     </div>
   </div>
 </form>  
+

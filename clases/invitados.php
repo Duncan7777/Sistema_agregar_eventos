@@ -22,6 +22,15 @@
       return $query->execute(); 
          }
 
+         public function eliminarInvitado($id_invitados){
+          $conexion = Conexion::conectar();
+      $sql = "DELETE FROM t_invitados WHERE id_invitados = ?";
+      $query = $conexion->prepare($sql);
+      $query->bind_param('i', $id_invitados);
+      return $query->execute();
+
+         }
+
     public function selectEventos(){
 
       $conexion = Conexion::conectar();

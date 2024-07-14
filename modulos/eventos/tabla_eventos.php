@@ -39,12 +39,13 @@
             <td><?php echo  $key['hora_fin'] ?></td>
             <td><?php echo  $key['fecha'] ?></td>
             <td>
-                <span class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal_editar_evento">
+                <span class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal_editar_evento" 
+                  onclick="editarEvento('<?php echo  $key['id_eventos'] ?>')" >
                 <i class="fa-solid fa-pen-to-square"></i>
             </span>
             </td>
             <td>
-                <span class="btn btn-danger">
+                <span class="btn btn-danger" onclick="eliminarEvento('<?php echo $key['id_eventos']?>')">
                 <i class="fa-solid fa-trash-can-arrow-up"></i>
 
                 </span>

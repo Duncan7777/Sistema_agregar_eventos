@@ -1,6 +1,6 @@
 <?php session_start();
 
-include "../../clases/invitados.php";
+include "../../clases/Invitados.php";
 $Invitados = new Invitados();
 $data = array(
     "id_evento" => $_POST['id_evento'],

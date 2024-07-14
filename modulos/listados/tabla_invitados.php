@@ -42,7 +42,7 @@
             </span>
             </td>
             <td>
-                <span class="btn btn-danger">
+                <span class="btn btn-danger" onclick="eliminarInvitado('<?php echo $key['idInvitado'] ?>')"> 
                 <i class="fa-solid fa-trash-can-arrow-up"></i>
 
                 </span>
